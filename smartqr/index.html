@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>i-Solar App</title>
+  <script>
+    function redirectUser() {
+      var ua = navigator.userAgent.toLowerCase();
+
+      if (ua.indexOf("android") > -1) {
+        window.location.href = "https://play.google.com/store/apps/details?id=uni.UNI199C480";
+      } 
+      else if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1) {
+        window.location.href = "https://apps.apple.com/us/app/i-solar/id1632580672";
+      } 
+      else {
+        window.location.href = "https://visiontek.co.in";
+      }
+    }
+    window.onload = redirectUser;
+  </script>
+</head>
+<body>
+  <p>Redirecting to i-Solar App...</p>
+</body>
+</html>
